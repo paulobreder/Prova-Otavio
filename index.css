@@ -1,0 +1,97 @@
+body {
+    background-color: #5889a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font: Arial;
+}
+
+.container {
+    background-color: #ffffff;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    animation: 1s ease-in-out forwards animate__animated animate__bounceInLeft;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #bababa;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #454545;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+}
+
+@keyframes entrada {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animacao-entrada {
+    animation: entrada 1s ease-in-out;
+}
+
+button:hover {
+    background-color: #5889a6;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+#tabela.fadeOut {
+    animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+input{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+}
+::placeholder{
+    font-style: italic;
+}
+h1{
+    color: #5889a6;
+}
